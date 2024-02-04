@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Josefin+Sans:wght@700&family=Martian+Mono&family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001151;
+}
+
+.shapes {
+    display: none;
+}
+
+.circle {
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+}
+
+.circle-1 {
+    top: 2rem;
+    left: 21rem;
+    height: 130px;
+    width: 130px;
+}
+
+.circle-2 {
+    top: 18rem;
+    right: 19.5rem;
+    height: 170px;
+    width: 170px;
+}
+
+.weather-box {
+    width: 25rem;
+    height: 27rem;
+    position: relative;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.wrapper {
+    padding-bottom: 2rem;
+    width: 25rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s ease-out;
+}
+
+.input-box input {
+    padding: 0.5rem;
+    background: transparent;
+    width: 100%;
+    font-family: 'Gabarito', cursive;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    height: 2.3rem;
+    color: #fff;
+}
+
+.input-box button {
+    height: 2.3rem;
+    width: 7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #ebebeb;
+    margin-left: 0.7rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    transition: 0.3s all;
+}
+
+.input-box button:hover {
+    background-color: #c7c7c7;
+}
+
+.input-box {
+    width: 85%;
+    margin-top: 1rem;
+    display: flex;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: 'Gabarito', cursive;
+}
+
+.weather-info {
+    color: #fff;
+    text-align: center;
+}
+
+.location {
+    margin-top: 2rem;
+}
+
+.city {
+    font-size: 41px;
+    font-family: 'Gabarito', cursive;
+    margin-bottom: 1rem;
+}
+
+.tempreture {
+    margin-top: 0.5rem;
+}
+
+.temp {
+    font-size: 75px;
+    margin-top: 2rem;
+}
+
+.date {
+    font-family: 'Martian Mono', monospace;
+}
+
+.°C {
+    color: rgb(255 186 60);
+}
+
+.°C,
+.temp {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.tempreture img {
+    width: 120px;
+    margin: 1rem 0;
+}
+
+.hi-low {
+    font-family: 'Martian Mono', monospace;
+}
+
+.error {
+    font-size: 41px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2rem;
+    color: #ff4040;
+}
+
+.alert {
+    font-size: 25px;
+    font-family: 'Martian Mono', monospace;
+    margin-top: 2rem;
+}
+
+
+/* media queries */
+
+@media screen and (max-width:590px) {
+    .circle {
+        display: none;
+    }
+}
