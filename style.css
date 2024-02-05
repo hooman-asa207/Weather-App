@@ -167,4 +167,9 @@ body {
     .circle {
         display: none;
     }
+
+    .weather-box,
+    .wrapper {
+        width: 20rem;
+    }
 }
